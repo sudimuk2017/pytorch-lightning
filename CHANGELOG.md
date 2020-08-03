@@ -9,7 +9,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
-- Added SyncBN for DDP ([#2801](https://github.com/PyTorchLightning/pytorch-lightning/pull/2801))
+- Added SyncBN for DDP ([#2801](https://github.com/PyTorchLightning/pytorch-lightning/pull/2801), [#2838](https://github.com/PyTorchLightning/pytorch-lightning/pull/2838))
 
 - Added basic `CSVLogger` ([#2721](https://github.com/PyTorchLightning/pytorch-lightning/pull/2721))
 
@@ -46,6 +46,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 - Refactored into `accelerator` module:
     * GPU training ([#2704](https://github.com/PyTorchLightning/pytorch-lightning/pull/2704))
     * TPU training ([#2708](https://github.com/PyTorchLightning/pytorch-lightning/pull/2708))
+    * DDP(2) backend ([#2796](https://github.com/PyTorchLightning/pytorch-lightning/pull/2796))
 
 - Using .comet.config file for CometLogger ([#1913](https://github.com/PyTorchLightning/pytorch-lightning/pull/1913))
 
@@ -94,13 +95,17 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 - Fixed correct CWD for ddp sub-processes when using Hydra ([#2719](https://github.com/PyTorchLightning/pytorch-lightning/pull/2719))
 
-- Fixed selecting GPUs using `CUDA_VISIBLE_DEVICES` ([#2739](https://github.com/PyTorchLightning/pytorch-lightning/pull/2739))
+- Fixed selecting GPUs using `CUDA_VISIBLE_DEVICES` ([#2739](https://github.com/PyTorchLightning/pytorch-lightning/pull/2739), [#2796](https://github.com/PyTorchLightning/pytorch-lightning/pull/2796))
 
 - Fixed false `num_classes` warning in metrics ([#2781](https://github.com/PyTorchLightning/pytorch-lightning/pull/2781))
 
 - Fixed shell injection vulnerability in subprocess call ([#2786](https://github.com/PyTorchLightning/pytorch-lightning/pull/2786))
 
 - Fixed LR finder and `hparams` compatibility ([#2821](https://github.com/PyTorchLightning/pytorch-lightning/pull/2821))
+
+- Fixed apex gradient clipping ([#2829](https://github.com/PyTorchLightning/pytorch-lightning/pull/2829))
+
+- Fixed save apex scaler states ([#2828](https://github.com/PyTorchLightning/pytorch-lightning/pull/2828))
 
 ## [0.8.5] - 2020-07-09
 
