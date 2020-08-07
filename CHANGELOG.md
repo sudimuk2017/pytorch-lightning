@@ -48,7 +48,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
     * TPU training ([#2708](https://github.com/PyTorchLightning/pytorch-lightning/pull/2708))
     * DDP(2) backend ([#2796](https://github.com/PyTorchLightning/pytorch-lightning/pull/2796))
 
-- Using .comet.config file for CometLogger ([#1913](https://github.com/PyTorchLightning/pytorch-lightning/pull/1913))
+- Using `.comet.config` file for `CometLogger` ([#1913](https://github.com/PyTorchLightning/pytorch-lightning/pull/1913))
+
+- Updated hooks arguments - breaking for `setup` and `teardown` ([#2850](https://github.com/PyTorchLightning/pytorch-lightning/pull/2850))
 
 ### Deprecated
 
